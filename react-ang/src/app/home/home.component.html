@@ -1,0 +1,6 @@
+<div>
+  <div *ngFor="let item of data">
+    <button (click)="item.isExpanded = !item.isExpanded">expand</button>
+    <div *ngIf="item.isExpanded">{{item.title}}</div>
+  </div>
+</div>
